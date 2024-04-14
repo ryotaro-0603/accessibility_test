@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+section {
+  padding: 40px;
+}
+
+section + section {
+  margin-top: 80px;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+.flex.--1 {
+  flex-direction: row-reverse;
+}
+
+.flex.--2 {
+  flex-direction: row;
+}
+
+.flex.--3 {
+  flex-direction: row-reverse;
+}
+
+.flex-box {
+  display: block;
+  width: calc(50% - (30px / 2));
+  text-decoration: none;
+  padding: 40px 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.flex-box:first-of-type {
+  background-color: #fc8181;
+}
+
+.flex-box:last-of-type {
+  background-color: #819afc;
+}
+
+.flex-box.--3 {
+  order: 2;
+}
+
+.flex-box.--4 {
+  order: 1;
+}
